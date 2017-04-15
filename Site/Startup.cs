@@ -77,12 +77,12 @@ namespace Site
                     config.SetLoadBabel(false)
                           .SetReuseJavaScriptEngines(false)
                           //.DisableServerSideRendering()
-                          .AddScriptWithoutTransform("~/scripts/server.js");
+                          .AddScriptWithoutTransform("~/js/server.js");
                 }
                 else
                 {
                     config.SetLoadBabel(false)
-                          .AddScriptWithoutTransform("~/scripts/server.min.js");
+                          .AddScriptWithoutTransform("~/js/server.min.js");
                 }
             });
 
