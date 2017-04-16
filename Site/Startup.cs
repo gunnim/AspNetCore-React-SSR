@@ -75,7 +75,7 @@ namespace Site
                 if (env.IsDevelopment())
                 {
                     config.SetLoadBabel(false)
-                          .SetReuseJavaScriptEngines(false)
+                          //.SetReuseJavaScriptEngines(false)
                           //.DisableServerSideRendering()
                           .AddScriptWithoutTransform("~/js/server.js");
                 }
@@ -91,8 +91,10 @@ namespace Site
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    "CatchAll",
+                    "{*url}",
+                    new { controller = "Home", action = "Index" }
+                );
             });
         }
     }
