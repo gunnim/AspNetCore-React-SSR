@@ -25,15 +25,23 @@ class Routing extends React.Component {
     }
 
     componentDidMount() {
-
+        debugger
         var router = this.determineRouting();
 
         this.setState({ router });
     }
 
     determineRouting() {
-        if (typeof document !== 'undefined' && document) return BrowserRouter;
-        else return MemoryRouter;
+        if (typeof document !== 'undefined' && document) {
+
+            console.log(JSON.stringify(document));
+            console.log('BrowserRouter');
+            return BrowserRouter;
+        }
+        else {
+            console.log('MemoryRouter');
+            return MemoryRouter;
+        }
     }
 
     render() {
