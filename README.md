@@ -1,5 +1,5 @@
-# Umbraco-React-Router-SSR
-Umbraco project w/ React Router + Server Side Rendering
+# AspNetCore-React-SSR
+ASP.NET Core project w/ React Router + Server Side Rendering
 
 This package uses ReactJS.NET server side
 
