@@ -1,7 +1,7 @@
 # AspNetCore-React-SSR
 ASP.NET Core project w/ React Router + Server Side Rendering
 
-This package uses ReactJS.NET server side
+This example uses ReactJS.NET server side
 
 
 #### Build instructions:
