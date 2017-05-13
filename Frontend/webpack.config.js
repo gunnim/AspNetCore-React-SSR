@@ -1,16 +1,30 @@
+var fs      = require('fs');
 var path    = require('path');
 var webpack = require('webpack');
+
+var UmbracoPath    = path.join(__dirname, '../Umbraco.Site/scripts');
+var AspNetCorePath = path.join(__dirname, '../Site/wwwroot/js');
+
+if (fs.existsSync(UmbracoPath))
+
+    var outDir = UmbracoPath;
+
+else if (fs.existsSync(AspNetCorePath))
+
+    var outDir = AspNetCorePath;
+
+else throw 'Could not find outdir';
 
 var settings = {
 
     devtool: 'eval-source-map',
     watch: true,
     entry: {
-        app:     'js/app',
+        client:  'js/client',
         server:  'js/server',
     },
     output: {
-        path: path.join(__dirname, '../Site/wwwroot/js'),
+        path: outDir,
         filename: '[name].js',
     },
     module: {
@@ -45,7 +59,7 @@ module.exports = function(env) {
         settings = Object.assign(settings, {
             devtool: '',
             output: {
-                path: path.join(__dirname, '../Site/wwwroot/js'),
+                path: outDir,
                 filename: '[name].min.js'
             },
             plugins: [

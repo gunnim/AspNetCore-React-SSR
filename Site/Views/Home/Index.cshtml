@@ -1,10 +1,4 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
-
-    var pathName = Context.Request.Path;
 }
-<p>@pathName</p>
-@Html.React("Routing", new
-{ 
-    path = pathName,
-})
+@Html.ReactRouterWithContext("Routing", new { })

@@ -1,3 +1,9 @@
-Build instructions
+# React-Router-SSR-JS
+JavaScript files for React Router SSR projects
 
-webpack // webpack --env.prod
+
+Build commands:
+
+webpack
+
+webpack --env.prod

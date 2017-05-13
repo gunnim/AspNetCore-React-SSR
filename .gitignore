@@ -259,5 +259,5 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
-Site/wwwroot/js/app*.js
+Site/wwwroot/js/client*.js
 Site/wwwroot/js/server*.js

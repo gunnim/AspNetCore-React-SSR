@@ -14,10 +14,10 @@
     </div>
 
     <environment names="Development">
-        <script src="~/js/app.js" asp-append-version="true"></script>
+        <script src="~/js/client.js" asp-append-version="true"></script>
     </environment>
     <environment names="Staging,Production">
-        <script src="~/js/app.min.js" asp-append-version="true"></script>
+        <script src="~/js/client.min.js" asp-append-version="true"></script>
     </environment>
 
     @RenderSection("Scripts", required: false)

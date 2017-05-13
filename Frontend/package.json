@@ -1,19 +1,19 @@
 {
-  "name": "aspnetcorereactssr",
+  "name": "reactrouterssrjs",
   "version": "1.0.0",
-  "description": "ASP.NET Core React SSR",
-  "main": "js/app.js",
+  "description": "React Router SSR JS",
+  "main": "js/app.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gunnim/AspNetCore-React-SSR.git"
+    "url": "git+https://github.com/gunnim/React-Router-SSR-JS.git"
   },
   "author": "Gunnar Már Óttarsson",
   "license": "ISC",
   "bugs": {
-    "url": ""
+    "url": "https://gunnim.blogspot.is/"
   },
   "homepage": "",
   "dependencies": {
