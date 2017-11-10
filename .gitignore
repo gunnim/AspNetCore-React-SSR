@@ -261,3 +261,5 @@ __pycache__/
 *.pyc
 Site/wwwroot/js/client*.js
 Site/wwwroot/js/server*.js
+
+Frontend/yarn\.lock
